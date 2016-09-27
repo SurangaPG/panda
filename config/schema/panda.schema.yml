@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Panda theme.
+
+panda.settings:
+  type: theme_settings
+  label: 'Panda settings'

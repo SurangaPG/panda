@@ -1,0 +1,43 @@
+<div class="l-container">
+
+  <header role="banner" class="l-header">
+    {{ page.header }}
+  </header>
+
+  {{ page.primary_menu }}
+  {{ page.secondary_menu }}
+
+  {{ page.breadcrumb }}
+
+  {{ page.highlighted }}
+
+  {{ page.help }}
+
+  <main role="main" class="l-main">
+    <a id="main-content" tabindex="-1"></a>
+
+    <div class="l-content">
+      {{ page.content }}
+    </div>
+
+    {% if page.sidebar_first %}
+      <aside class="l-sidebar-first" role="complementary">
+        {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
+
+    {% if page.sidebar_second %}
+      <aside class="l-sidebar-second" role="complementary">
+        {{ page.sidebar_second }}
+      </aside>
+    {% endif %}
+
+  </main>
+
+  {% if page.footer %}
+    <footer role="contentinfo" class="l-footer">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+
+</div>{# /.layout-container #}

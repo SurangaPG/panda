@@ -2,17 +2,22 @@
 panda.base:
   css:
     base:
-      dist/css/base.css: {}
+      dist/css/base/base.css: {}
+
+panda.components.base:
+    css:
+      components:
+        dist/css/components/buttons.css: {}
 
 panda.layout:
   css:
     layout:
-      dist/css/layout.css: {}
+      dist/css/layout/layout.css: {}
 
 panda.theme:
   css:
     theme:
-      dist/css/theme.css: {}
+      dist/css/theme/theme.css: {}
 
 # Javascript libraries
 jquery.nice-select:

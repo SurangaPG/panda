@@ -6,12 +6,16 @@ core: 8.x
 base theme: false
 
 libraries:
-  - panda/global-styling
+  - panda/panda.base
+  - panda/panda.components.base
+  - panda/panda.layout
+  - panda/panda.theme
   - panda/jquery.nice-select.behavior
 
 regions:
-  # Same regions as Seven
   header: Header
-  navigation: 'Navigation bar'
+  navigation: Navigation
   content: Content
   footer: Footer
+regions_hidden:
+  - sidebar_first

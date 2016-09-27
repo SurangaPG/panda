@@ -1,0 +1,14 @@
+panda.base:
+  css:
+    base:
+      dist/css/base.css: {}
+
+panda.layout:
+  css:
+    layout:
+      dist/css/layout.css: {}
+
+panda.theme:
+  css:
+    theme:
+      dist/css/theme.css: {}

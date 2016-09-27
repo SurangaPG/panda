@@ -3,6 +3,9 @@ logs
 *.log
 npm-debug.log*
 
+# Source Maps
+*.map
+
 # Dependency directories
 bower_components
 node_modules

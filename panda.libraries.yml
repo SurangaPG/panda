@@ -1,3 +1,4 @@
+# CSS libraries
 panda.base:
   css:
     base:
@@ -13,6 +14,7 @@ panda.theme:
     theme:
       dist/css/theme.css: {}
 
+# Javascript libraries
 jquery.nice-select:
   js:
     bower_components/jquery-nice-select/js/jquery.nice-select.min.js: {}
@@ -22,3 +24,11 @@ jquery.nice-select:
   dependencies:
     - core/jquery
     - core/drupal
+
+# Wrapper for Drupal (using Drupal behaviors)
+jquery.nice-select.behavior:
+    js:
+      dist/js/nice-select.behaviors.js: {}
+    dependencies:
+      - panda/jquery.nice-select
+      - core/jquery.once

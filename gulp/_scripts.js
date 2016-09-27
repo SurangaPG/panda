@@ -12,6 +12,11 @@ let buildScripts = () => {
   $.util.log("👻  Moving all the javascript")
 
   return gulp.src(conf.paths.scripts.src)
+    .pipe($.if(conf.debugMode, $.sourcemaps.write('.')))
+    .pipe($.babel({
+      presets: ['es2015']
+    }))
+    .pipe($.if(conf.debugMode, $.sourcemaps.write('.')))
     .pipe(gulp.dest(conf.paths.scripts.dist))
 }
 

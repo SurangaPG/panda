@@ -12,6 +12,7 @@ let buildStyles = () => {
   $.util.log("🤘🏻  Compile all the stylesheets")
 
   return gulp.src(conf.paths.styles.src)
+  .pipe($.if(conf.debugMode, $.sourcemaps.init()))
     .pipe($.sassGlob())
     .pipe($.sass.sync({
       outputStyle: 'expanded',
@@ -20,6 +21,7 @@ let buildStyles = () => {
       ]
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer())
+    .pipe($.if(conf.debugMode, $.sourcemaps.write('.')))
     .pipe(gulp.dest(conf.paths.styles.dist))
 }
 

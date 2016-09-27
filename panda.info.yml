@@ -1,4 +1,4 @@
-name: panda
+name: Panda
 type: theme
 description: Panda, an awesome base theme to get you started. Sponsored by Ausy Belgium
 package: Ausy
@@ -7,8 +7,10 @@ base theme: false
 
 libraries:
   - panda/global-styling
+  - panda/jquery.nice-select.behavior
 
 regions:
+  # Same regions as Seven
   header: Header
   navigation: 'Navigation bar'
   content: Content

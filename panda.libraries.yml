@@ -4,7 +4,7 @@ panda.base:
     base:
       dist/css/base/base.css: {}
 
-panda.components.base:
+panda.components.buttons:
     css:
       components:
         dist/css/components/buttons.css: {}

@@ -2,7 +2,7 @@
 
   Drupal.behaviors.niceSelect = {
     attach: (context, settings) => {
-      $('select').niceSelect()
+      $('select').once().niceSelect()
     }
   }
   

@@ -2,6 +2,8 @@
 import gulp from 'gulp'
 import browserSync from 'browser-sync'
 import * as conf from './_conf'
+import gulpLoadPlugins from 'gulp-load-plugins'
+const $ = gulpLoadPlugins()
 
 /**
  * The serve task will setup a live reload server.

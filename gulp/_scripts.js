@@ -11,6 +11,7 @@ const $ = gulpLoadPlugins()
 let buildScripts = () => {
   $.util.log("👻  Moving all the javascript")
 
+  // @todo: still need to minify/ugfily the javascript …
   return gulp.src(conf.paths.scripts.src)
     .pipe($.if(conf.debugMode, $.sourcemaps.write('.')))
     .pipe($.babel({

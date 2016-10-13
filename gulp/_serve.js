@@ -17,4 +17,9 @@ gulp.task('serve', ['build'], () => {
 
   gulp.watch(conf.paths.styles.src, ['styles-reload'])
   gulp.watch(conf.paths.scripts.src, ['scripts-reload'])
+  // @todo: This should be a separate file or function … but just to quick fix this.
+  gulp.watch('templates/**/*.twig', () => {
+    $.util.log(`A ${$.util.colors.bold.red('*.html.twig')} file has been changed.`)
+    browserSync.reload()
+  })
 })

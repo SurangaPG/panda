@@ -28,7 +28,6 @@ jquery.nice-select:
       bower_components/jquery-nice-select/css/nice-select.css: {}
   dependencies:
     - core/jquery
-    - core/drupal
 
 # Wrapper for Drupal (using Drupal behaviors)
 jquery.nice-select.behavior:
@@ -36,4 +35,6 @@ jquery.nice-select.behavior:
       dist/js/nice-select.behaviors.js: {}
     dependencies:
       - panda/jquery.nice-select
+      - core/drupal
+      - core/jquery
       - core/jquery.once

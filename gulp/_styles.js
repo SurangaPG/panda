@@ -20,7 +20,9 @@ let buildStyles = () => {
         'bower_components/bootstrap/scss'
       ]
     }).on('error', $.sass.logError))
-    .pipe($.autoprefixer())
+    .pipe($.cssnano({
+      autoprefixer: { browsers: ['last 2 versions', 'IE 10', 'IE 11', 'Firefox >= 20'], add: true }
+    }))
     .pipe($.if(conf.debugMode, $.sourcemaps.write('.')))
     .pipe(gulp.dest(conf.paths.styles.dist))
 }
